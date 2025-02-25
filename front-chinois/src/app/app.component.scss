@@ -1,0 +1,89 @@
+:host {
+  --primary-color: #D32F2F; /* Red */
+  --secondary-color: #FFEB3B; /* Yellow */
+  --background-color: #F4F4F4;
+  --text-color: #333;
+  --heading-font: 'Arial', sans-serif;
+  --body-font: 'Helvetica', sans-serif;
+
+  font-family: var(--body-font);
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-family: var(--heading-font);
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+p {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+main {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Allow absolute positioning of the image */
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.container h1 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.container p {
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* Add absolute positioning for the image */
+img.chinese-image {
+  position: absolute;
+  bottom: -30px;
+  right: 20px;
+  width: 100px; /* Adjust the size of the image */
+  height: auto;
+}

@@ -1,0 +1,12 @@
+<main>
+  <div class="container">
+    <h1>Une dose de sagesse</h1>
+    <div *ngIf="citation">
+      <p>"{{ citation.texte }}"</p>
+      <footer>- {{ citation.auteur }}</footer>
+    </div>
+    <button class="cta-button" (click)="getRandomCitation()">Un peu plus de sagesse ?</button>
+  </div>
+
+  <img src="assets/img/chinese.png" alt="Chinese Character" class="chinese-image" style="width: 300px; height: 50%;">
+</main>
